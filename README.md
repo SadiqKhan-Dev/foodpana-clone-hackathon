@@ -311,16 +311,8 @@ cd Food-Panda-landingPage-Clone
    - Simply open `index.html` in your web browser
    - No build process or dependencies required
 
-3. **Local Server (Optional)**
-```bash
-# Using Python 3
-python -m http.server 8000
 
-# Using Node.js with http-server
-npx http-server
-```
-
-4. **Navigate to**
+3. **Navigate to**
    - Main Page: `http://localhost:8000/index.html`
    - Ads Page: `http://localhost:8000/Components/ads.html`
 
@@ -411,7 +403,7 @@ This project is created for educational purposes as part of a web development as
 ## Contact
 
 For questions or feedback about this project:
-- GitHub: [Your GitHub Profile]
+- GitHub: [https://github.com/SadiqKhan-Dev/foodpana-clone-hackathon/]
 - Email: [Your Email]
 
 ---
