@@ -1,0 +1,726 @@
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-pink);
+  cursor: pointer;
+}
+
+.logo-image {
+  height: 35px;
+  width: auto;
+  object-fit: contain;
+}
+
+.panda-icon {
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+
+
+/* Panda Ads Specific Colors */
+.ads-brand {
+    color: #ff2b85; /* Bright Pink for the Ads logo */
+}
+
+.ads-hero {
+    background-color: #000; /* Deep black background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+}
+
+.ads-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text readability */
+    z-index: 1;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-text-content h1 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-text-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.hero-image-content {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Specific "Get in touch" Button Style */
+.btn-white {
+    background-color: #fff;
+    color: #d70f64;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* --- Stats Section --- */
+.stats-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stats-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-item h3 {
+    font-size: 5rem; /* Large impact numbers */
+    font-weight: 800;
+    margin: 0;
+    display: inline-block;
+}
+
+.stat-item .unit {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: lowercase;
+}
+
+/* Mobile responsive stats */
+@media (max-width: 768px) {
+    .stats-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .stat-item h3 { font-size: 3.5rem; }
+}
+
+/* --- Stats Section --- */
+.stats-section {
+    padding: 100px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.stats-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+    line-height: 1.2;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.stat-item {
+    flex: 1;
+}
+
+.stat-item h3 {
+    font-size: 5rem; /* Large impact numbers */
+    font-weight: 800;
+    margin: 0;
+    display: inline-block;
+}
+
+.stat-item .unit {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.stat-item p {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-top: 10px;
+    text-transform: lowercase;
+}
+
+/* Mobile responsive stats */
+@media (max-width: 768px) {
+    .stats-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .stat-item h3 { font-size: 3.5rem; }
+}
+
+/* --- Benefits Section --- */
+.benefits-section {
+    padding: 80px 40px;
+    background-color: #f8f9fa; /* Light grey background like image */
+    text-align: center;
+}
+
+.benefits-header h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #000;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.benefit-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.benefit-icon img {
+    width: 80px !important; /* Adjust based on your icon assets */
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.benefit-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.benefit-card p {
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.5;
+    max-width: 300px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+    .benefits-grid {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+/* --- In-App Ads Section --- */
+.inapp-ads-section {
+    padding: 100px 40px;
+    background-color: #fff;
+}
+
+.inapp-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.inapp-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.inapp-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 80px;
+}
+
+.inapp-image {
+    flex: 1.2;
+}
+
+.inapp-image img {
+    width: 100%;
+}
+
+.inapp-text {
+    flex: 1;
+}
+
+.inapp-text h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.inapp-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* --- Off-App Ads Section --- */
+.offapp-ads-section {
+    padding: 100px 40px;
+    background-color: #fff;
+}
+
+.offapp-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+.offapp-text {
+    flex: 1;
+}
+
+.offapp-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #000;
+}
+
+.offapp-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    max-width: 450px;
+}
+
+.offapp-image {
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.offapp-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive adjust */
+@media (max-width: 768px) {
+    .offapp-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .offapp-text p { margin: 0 auto 30px; }
+}
+
+/* --- Strategic Partnerships Section --- */
+.partnerships-section {
+    padding: 100px 40px;
+    background-color: #fff;
+}
+
+.partnerships-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.partnerships-image {
+    flex: 1.5;
+}
+
+.partnerships-image img {
+    width: 100%;
+}
+
+.partnerships-text {
+    flex: 1;
+}
+
+.partnerships-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.partnerships-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* --- Targeting Section --- */
+.targeting-section {
+    padding: 100px 40px;
+    background-color: #f8f9fa;
+}
+
+.targeting-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 60px;
+}
+
+.targeting-text {
+    flex: 1;
+}
+
+.targeting-text h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.targeting-table-wrapper {
+    flex: 1.5;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.comparison-table th {
+    background-color: #ff2b85;
+    color: #fff;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.comparison-table th:first-child { border-radius: 8px 0 0 8px; }
+.comparison-table th:last-child { border-radius: 0 8px 8px 0; }
+
+.comparison-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.check { color: #ff2b85; font-weight: bold; font-size: 1.2rem; }
+.cross { color: #333; font-weight: bold; font-size: 1.2rem; }
+
+
+/* --- Impact Section --- */
+.impact-section {
+    padding: 80px 40px;
+    background-color: #f5f5f5; /* Light grey backdrop */
+    text-align: center;
+}
+
+.impact-header h2 {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+    font-weight: 700;
+}
+
+.impact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.impact-card {
+    flex: 1;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.impact-img-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.impact-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.impact-info h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.btn-read-more {
+    background-color: #ff2b85;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* --- Testimonials Section --- */
+.testimonials-section {
+    padding: 100px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.testimonials-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.testimonials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonial-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quote {
+    font-size: 1rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 30px;
+    min-height: 120px; /* Ensures alignment across varying text lengths */
+}
+
+.client-info {
+    margin-bottom: 40px;
+}
+
+.client-info strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.client-info span {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.client-logo {
+    max-height: 80px; 
+    width: auto;
+    /* filter: grayscale(100%); */
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+/* .client-logo:hover {
+    filter: grayscale(0);
+    opacity: 1;
+} */
+
+/* --- Final CTA --- */
+.final-cta {
+    background-color: #fff2f7; /* Very light pink background */
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.cta-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Mobile responsive CTA */
+@media (max-width: 768px) {
+    .cta-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* --- Brands Section --- */
+.brands-section {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.brands-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: #000;
+}
+
+.brands-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 40px 20px;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.brands-grid .brand-logo {
+    width: 300px !important;
+    height: 130px !important;
+    justify-self: center;
+    border: 1px solid #ccc;
+}
+
+
+
+/* Responsive adjustment for mobile */
+@media (max-width: 992px) {
+    .brands-grid { grid-template-columns: repeat(4, 1fr); }
+}
+@media (max-width: 600px) {
+    .brands-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* --- Footer Styling --- */
+.footer-dark {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 5% 30px;
+}
+
+.footer-main-logo {
+    height: 40px; /* Specific logo size from footer */
+    margin-bottom: 40px;
+}
+
+.footer-links-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr;
+    gap: 40px;
+    border-bottom: 1px solid #333; /* Suble divider */
+    padding-bottom: 40px;
+}
+
+.footer-col h4 {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.footer-col ul { list-style: none; padding: 0; }
+.footer-col ul li { margin-bottom: 12px; }
+.footer-col ul li a { color: #fff; text-decoration: none; font-size: 0.9rem; }
+
+
+/* --- Floating Button --- */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff2b85;
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

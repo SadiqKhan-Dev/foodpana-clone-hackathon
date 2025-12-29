@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - foodpanda</title>
+    <link rel="stylesheet" href="../assests/CSS/style.css">
+    <link rel="stylesheet" href="../assests/CSS/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">
+        <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg" alt="" />
+      </div>
+      <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./newsroom.html">Newsroom</a>
+        <a href="./partners.html">Partners</a>
+        <a href="./ads.html">panda ads</a>
+        <a href="./contact.html" class="active">Contact</a>
+        <a href="./career.html">Careers</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="location-dropdown">
+          <button class="btn-primary location-btn">
+            <i class="fas fa-map-marker-alt"></i>
+            Choose location
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="location-dropdown-menu">
+            <div class="location-search">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search location...">
+            </div>
+            <div class="location-list">
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Singapore</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Malaysia</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Philippines</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Thailand</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hong Kong</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Taiwan</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bangladesh</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Pakistan</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Myanmar</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Cambodia</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-content">
+            <h1>Get in Touch</h1>
+            <p>Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+65 1234 5678">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="partner">Partnership Inquiry</option>
+                                <option value="support">Customer Support</option>
+                                <option value="careers">Careers</option>
+                                <option value="press">Press & Media</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us more about your inquiry..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-submit">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-container">
+                    <h2>Contact Information</h2>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Us</h3>
+                            <p>support@foodpanda.com</p>
+                            <p>press@foodpanda.com</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Call Us</h3>
+                            <p>Singapore: +65 6011 1933</p>
+                            <p>24/7 Support Available</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Visit Us</h3>
+                            <p>1 Paya Lebar Link</p>
+                            <p>#10-01, Singapore 408533</p>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I become a foodpanda partner?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can become a partner by visiting our Partners page and filling out the registration form. Our team will contact you within 2-3 business days.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your delivery hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our delivery hours vary by location, but most areas have 24/7 service. Check the app for specific restaurant hours in your area.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I track my order?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can track your order in real-time through the foodpanda app. You'll receive notifications at each stage of delivery.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What payment methods do you accept?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept credit/debit cards, digital wallets, cash on delivery, and various local payment methods depending on your location.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I apply for a rider position?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Visit our Careers page or download the rider app to apply. You'll need a valid driver's license and vehicle registration.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer corporate accounts?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! We offer corporate accounts with special benefits. Contact our business team for more information.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-columns">
+                <div class="footer-logo">
+                    <img src="../assests/foodpanda-images/imgi_1_foodpanda_logo_2023.jpeg" alt="foodpanda logo" class="footer-img" />
+                </div>
+                <div class="footer-col">
+                    <h4>Navigate</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./newsroom.html">Newsroom</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Collaborate</h4>
+                    <ul>
+                        <li><a href="./career.html">Explore careers</a></li>
+                        <li><a href="./partners.html">Become a partner</a></li>
+                        <li><a href="#">Become a rider</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow us on</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2025 foodpanda</p>
+            <p><a href="#">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="../script.js"></script>
+    <script src="../assests/JAVASCRIT/contact.js"></script>
+</body>
+</html>

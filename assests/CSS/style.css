@@ -1,0 +1,838 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary-pink: #d70f64; /* The official Foodpanda Pink */
+  --text-dark: #333333;
+  --nav-height: 70px;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  height: var(--nav-height);
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-pink);
+  cursor: pointer;
+}
+.panda-icon {
+  font-size: 1.8rem;
+  margin-right: 5px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-pink);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-pink);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a.active {
+  color: var(--primary-pink);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Right Side Actions */
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  background-color: var(--primary-pink);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px; /* Slightly rounded corners */
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #b50b53; /* Darker pink on hover */
+}
+
+.search-icon {
+  font-size: 1.2rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.search-icon:hover {
+  color: var(--primary-pink);
+}
+
+/* Location Dropdown Styles */
+.location-dropdown {
+  position: relative;
+}
+
+.location-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.location-btn i:first-child {
+  font-size: 0.9rem;
+}
+
+.location-btn i:last-child {
+  font-size: 0.75rem;
+  transition: transform 0.3s ease;
+}
+
+.location-dropdown:hover .location-btn i:last-child {
+  transform: rotate(180deg);
+}
+
+.location-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  min-width: 280px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+
+.location-dropdown:hover .location-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.location-search {
+  padding: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.location-search i {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.location-search input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.location-search input::placeholder {
+  color: #999;
+}
+
+.location-list {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 8px 0;
+}
+
+.location-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.location-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.location-list::-webkit-scrollbar-thumb {
+  background: #d70f64;
+  border-radius: 10px;
+}
+
+.location-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.location-item:hover {
+  background-color: #fff0f7;
+  color: var(--primary-pink);
+}
+
+.location-item i {
+  font-size: 0.9rem;
+  color: var(--primary-pink);
+}
+
+.location-item span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* --- Hero Section & Video --- */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Adjust height based on preference */
+  display: flex;
+  align-items: center; /* Vertically center the text */
+  padding-left: 80px; /* Space from the left side */
+  overflow: hidden;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.back-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers area without stretching */
+}
+
+/* Dark Overlay to make text readable */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* 30% dark tint */
+}
+
+/* Hero Text */
+.hero-content {
+  z-index: 1;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  opacity: 0; /* Hidden initially for animation */
+  animation: slideUpFade 1.5s ease-out forwards; /* The Animation */
+}
+
+/* --- Animations --- */
+@keyframes slideUpFade {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Tweaks */
+@media (max-width: 900px) {
+  .nav-links {
+    display: none; /* Simple hiding for mobile for now */
+  }
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+  .navbar {
+    padding: 0 20px;
+  }
+  .hero-section {
+    padding-left: 20px;
+  }
+}
+
+/* --- Mission Text Section --- */
+.mission-section {
+  padding: 60px 40px; /* Top/Bottom padding */
+  max-width: 1000px; /* Stop text from stretching too wide */
+  margin: 0 auto; /* Center the container */
+  color: #333;
+}
+
+.mission-section h2 {
+  font-size: 2rem;
+  font-weight: 400; /* Regular weight */
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.mission-subtext {
+  font-size: 2rem;
+  font-weight: 700; /* Bold part */
+  color: #333;
+  line-height: 1.3;
+  width: 720px;
+}
+
+/* --- Feature Section (Split Layout) --- */
+.feature-section {
+  padding: 60px 40px;
+  background-color: #fff;
+}
+
+.feature-container {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  gap: 50px; /* Space between image and text */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-image {
+  flex: 1; /* Takes up 50% width */
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 20px; /* Rounded corners like the app screenshot */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.feature-text {
+  flex: 1; /* Takes up 50% width */
+}
+
+.feature-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+  line-height: 1.2;
+}
+
+.feature-text p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.btn-large {
+  padding: 12px 35px;
+  font-size: 1rem;
+  border-radius: 8px;
+}
+
+/* --- Scroll Animation Classes --- */
+/* Elements start hidden and slightly down */
+/* .hidden-element {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s ease-out;  */
+/* Smooth transition */
+/* } */
+
+/* When this class is added by JS, they appear */
+.show-element {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* --- Responsive Layout for Mobile --- */
+@media (max-width: 768px) {
+  .feature-container {
+    flex-direction: column; /* Stack image on top of text */
+  }
+
+  .mission-section h2,
+  .mission-subtext {
+    font-size: 1.5rem;
+  }
+
+  .feature-text {
+    text-align: center;
+  }
+}
+
+/* --- App Download Section --- */
+.app-download-section {
+  padding: 80px 40px;
+  background-color: #fff;
+  border-top: 1px solid #eee; /* Slight separator */
+}
+
+.app-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 50px;
+}
+
+.app-text {
+  flex: 1; /* Takes 50% width */
+}
+
+.app-text h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.app-text p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Store Badge Styling */
+.store-badges {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap; /* Wraps to next line on small screens */
+}
+
+.store-badges img {
+  height: 45px; /* Consistent height for all badges */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.store-badges img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.app-image {
+  flex: 1; /* Takes 50% width */
+}
+
+.app-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Back to Top Button --- */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--primary-pink);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 8px; /* Square with rounded edges */
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: none; /* Hidden by default until scrolled */
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.3s;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top:hover {
+  background-color: #b50b53;
+  transform: translateY(-5px); /* Moves up slightly on hover */
+}
+
+/* --- Mobile Responsiveness --- */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column-reverse; /* Image on top, text below for mobile */
+    text-align: center;
+  }
+  .store-badges {
+    justify-content: center;
+  }
+}
+
+/* --- Careers Section --- */
+.careers-section {
+  padding: 80px 40px;
+  background-color: #fff;
+}
+
+.careers-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.careers-image {
+  flex: 1.2; /* Slightly larger image side */
+}
+
+.careers-image img {
+  width: 100%;
+  border-radius: 4px; /* Career section uses sharper corners in the screenshot */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.careers-text {
+  flex: 1;
+}
+
+.careers-text h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.highlight-p {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.careers-text p {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Mobile Fix for Careers */
+@media (max-width: 768px) {
+  .careers-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.news-section {
+  padding: 60px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.news-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.news-header p {
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 0.95rem;
+}
+
+/* Carousel Layout */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+  padding-bottom: 20px;
+}
+
+.carousel-wrapper:active {
+  cursor: grabbing;
+}
+
+.carousel-container {
+  display: flex;
+  gap: 15px;
+  padding: 0 50px; /* Side padding so cards don't touch edges */
+  scroll-behavior: smooth;
+  transition: transform 0.2s ease-out;
+}
+
+/* THE CARD STYLE */
+.news-card {
+  flex: 0 0 280px; /* FIXED WIDTH */
+  height: 420px; /* FIXED HEIGHT */
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: left;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.pink-card {
+  background: linear-gradient(135deg, #ff2b85 0%, #d70f64 100%);
+}
+
+/* Gradient Overlay for Text Readability */
+.card-content {
+  padding: 20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    transparent 100%
+  );
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.pink-card .card-content {
+  background: transparent; /* Already has pink gradient on parent */
+}
+
+.card-category {
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.card-date {
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+/* --- Business Section --- */
+.business-section {
+  padding: 80px 40px;
+  background-color: #fff;
+}
+.business-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+}
+.business-text {
+  flex: 1;
+}
+.business-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+.business-text p {
+  margin-bottom: 30px;
+  line-height: 1.6;
+  color: #555;
+}
+.business-image {
+  flex: 1.5;
+}
+.business-image img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+
+
+/* --- Floating Buttons --- */
+.floating-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 2000;
+}
+.floating-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px; /* Square with round corners per image */
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s transform;
+}
+.floating-btn:hover {
+  transform: scale(1.1);
+}
+.whatsapp {
+  background-color: #25d366;
+  text-decoration: none;
+}
+.top-btn {
+  background-color: var(--primary-pink);
+  /* display: none; */
+} /* Hidden by default */
+
+
+
+/* --- Dark Footer --- */
+.main-footer {
+    background-color: #000; /* Solid black background */
+    color: #fff;
+    padding: 60px 5% 20px;
+    position: relative;
+}
+
+.footer-top {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.footer-img {
+    height: 30px; /* Adjust based on your logo aspect ratio */
+    width: auto;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px; /* Large spacing between columns */
+}
+
+.footer-col h4 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col li {
+    margin-bottom: 12px;
+}
+
+.footer-col a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+.footer-col a:hover {
+    color: #ff2b85; /* Transition to signature pink on hover */
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
+    font-size: 1.4rem;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    border-top: none; /* Clean bottom row */
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #ff2b85; /* Transition to signature pink on hover */
+}
+
+/* --- Media Queries --- */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+

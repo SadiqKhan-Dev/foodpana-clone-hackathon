@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodpanda Clone</title>
+    <link rel="stylesheet" href="./assests/CSS/style.css" />
+    <link rel="stylesheet" href="./assests/CSS/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo ">
+        <img src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg" alt="" />
+      </div>
+      <nav class="nav-links">
+        <a href="./index.html" class="active">Home</a>
+        <a href="./Components/about.html">About</a>
+        <a href="./Components/newsroom.html">Newsroom</a>
+        <a href="./Components/partners.html">Partners</a>
+        <a href="./Components/ads.html">panda ads</a>
+        <a href="./Components/contact.html">Contact</a>
+        <a href="./Components/career.html">Careers</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="location-dropdown">
+          <button class="btn-primary location-btn">
+            <i class="fas fa-map-marker-alt"></i>
+            Choose location
+            <i class="fas fa-chevron-down"></i>
+          </button>
+          <div class="location-dropdown-menu">
+            <div class="location-search">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search location...">
+            </div>
+            <div class="location-list">
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Singapore</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Malaysia</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Philippines</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Thailand</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Hong Kong</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Taiwan</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Bangladesh</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Pakistan</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Myanmar</span>
+              </a>
+              <a href="#" class="location-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Cambodia</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <i class="fas fa-search search-icon"></i>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="video-container">
+        <video autoplay muted loop playsinline class="back-video">
+          <source
+            src="./assests/video/Home - foodpanda - food and more, delivered.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="animate-text">food<br />and groceries<br />in a tap</h1>
+      </div>
+    </section>
+
+    <section class="mission-section hidden-element">
+      <!-- <p class="mission-subtext"></p> -->
+      <p class="mission-subtext">
+        We're here to help you <br> 
+        live life the panda way. <br>
+        Spend more time doing
+        what you love – we'll take care of tasty meals, fresh groceries and new
+        flavours.
+      </p>
+    </section>
+
+    <section class="feature-section hidden-element">
+      <div class="feature-container">
+        <div class="feature-image">
+          <img
+            src="./assests/foodpanda-images/generation of delivery.jpeg"
+            alt="Foodpanda App on Phones"
+          />
+        </div>
+
+        <div class="feature-text">
+          <h2>
+            Meet the next <br />
+            generation of delivery!
+          </h2>
+          <p>
+            What makes quick commerce quick? We stand for swift personalised
+            delivery solutions for our customers, partners and employees. Learn
+            how we empower authentic lifestyles and drive innovation across the
+            globe.
+          </p>
+          <button class="btn-primary btn-large">About</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="app-download-section hidden-element">
+      <div class="app-container">
+        <div class="app-text">
+          <h2>Taste the convenience.</h2>
+          <p>
+            Try us out! Delicious food and speedy groceries are at your
+            fingertips. Go ahead, download foodpanda now.
+          </p>
+          <div class="store-badges">
+            <a href="#">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg"
+                alt="App Store"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+                alt="Google Play"
+              />
+            </a>
+            <a href="#" class="gallery-badge">
+              <img
+                src="https://www.foodpanda.com/wp-content/uploads/2023/02/app-huawei.png"
+                alt="AppGallery"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="app-image">
+          <img
+            src=""
+            alt="Delivery Rider"
+          />
+        </div>
+      </div>
+    </section>
+
+    <button id="backToTop" class="back-to-top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <section class="careers-section hidden-element">
+      <div class="careers-container">
+        <div class="careers-image">
+          <img
+            src="https://www.foodpanda.com/wp-content/uploads/2025/07/fp-home-3-768x512.webp"
+            alt="Foodpanda Team"
+          />
+        </div>
+
+        <div class="careers-text">
+          <h2>Find the job you'd love</h2>
+          <p class="highlight-p">
+            Hungry to make a difference? There's a seat at our table!
+          </p>
+          <p>
+            Find out how we connect tech, passions, projects and people –
+            explore international career opportunities at foodpanda.
+          </p>
+          <a href="./Components/career.html">
+            <button class="btn-primary btn-large">Join us!</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="news-section">
+      <div class="news-header">
+        <h2>Have you heard?</h2>
+        <p>
+          The industry is changing fast! Stay up to date with foodpanda press.
+          Catch up on the latest news, updates and reports here.
+        </p>
+      </div>
+
+      <div class="carousel-wrapper" id="carouselWrapper">
+        <div class="carousel-container" id="draggableCarousel">
+          <div
+            class="news-card"
+            style="background-image: url('your-image-1.jpg')"
+          >
+            <div class="card-content">
+              <p class="card-category">Business</p>
+              <h3 class="card-title">
+                foodpanda Partners with Fiserv to Enable More Streamlined and
+                Secure eCommerce Payments Across Asia
+              </h3>
+              <p class="card-date">23.10.2024</p>
+            </div>
+          </div>
+
+          <div class="news-card pink-card">
+            <div class="card-content">
+              <p class="card-category">Press Releases</p>
+              <h3 class="card-title">
+                foodpanda Singapore launches inaugural Rider Safety Month in
+                partnership with Traffic Police
+              </h3>
+              <p class="card-date">07.10.2024</p>
+            </div>
+          </div>
+
+          <div
+            class="news-card"
+            style="background-image: url('your-image-2.jpg')"
+          >
+            <div class="card-content">
+              <p class="card-category">Press Releases</p>
+              <h3 class="card-title">
+                foodpanda Malaysia launches 'Jejak Panda' to provide accessible
+                income opportunities
+              </h3>
+              <p class="card-date">13.08.2024</p>
+            </div>
+          </div>
+
+          <div
+            class="news-card"
+            style="background-image: url('your-image-3.jpg')"
+          >
+            <div class="card-content">
+              <p class="card-category">Merchants</p>
+              <h3 class="card-title">
+                foodpanda strengthens merchant with revamped onboarding
+                milestones in Asia
+              </h3>
+              <p class="card-date">17.12.2025</p>
+            </div>
+          </div>
+
+          <div
+            class="news-card"
+            style="background-image: url('your-image-3.jpg')"
+          >
+            <div class="card-content">
+              <p class="card-category">Merchants</p>
+              <h3 class="card-title">
+                foodpanda strengthens merchant with revamped onboarding
+                milestones in Asia
+              </h3>
+              <p class="card-date">17.12.2025</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="business-section hidden-element">
+      <div class="business-container">
+        <div class="business-text">
+          <h2>Feed your team.</h2>
+          <p>
+            Treat your talented team to their favourite meals. Let them pick!
+            Explore flexible corporate food delivery options and tasty employee
+            perks.
+          </p>
+          <button class="btn-primary">Explore</button>
+        </div>
+        <div class="business-image">
+          <img
+            src="https://www.foodpanda.com/wp-content/uploads/2025/07/foodpanda-home-4.webp"
+            alt="Foodpanda for business"
+          />
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="main-footer">
+      <div class="footer-top">
+        <div class="footer-columns">
+          <div class="footer-logo">
+            <img
+              src="https://www.foodpanda.com/wp-content/uploads/2023/06/foodpanda_logo_2023.svg"
+              alt="foodpanda logo"
+              class="footer-img"
+            />
+          </div>
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Newsroom</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Collaborate</h4>
+            <ul>
+              <li><a href="./Components/career.html">Explore careers</a></li>
+              <li><a href="#">Become a rider</a></li>
+              <li><a href="#">Feed your team</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Follow us on</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2025 foodpanda</p>
+        <p><a href="#">Privacy Policy</a></p>
+      </div>
+      <button
+        class="back-to-top"
+        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+      >
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
