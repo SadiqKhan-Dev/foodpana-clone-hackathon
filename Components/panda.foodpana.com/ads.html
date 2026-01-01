@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assests/CSS/style.css" />
-    <link rel="stylesheet" href="../assests/CSS/ads.css" />
-    <link rel="stylesheet" href="../assests/CSS/responsive.css" />
+    <link rel="stylesheet" href="../../assests/CSS/style.css" />
+    <link rel="stylesheet" href="../../assests/CSS/panda.foodpana.com/ads.css" />
+    <link rel="stylesheet" href="../../assests/CSS/responsive.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -15,37 +15,48 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <title>Document</title>
   </head>
   <body>
-    <header class="navbar ads-nav">
-      <div class="logo">
-        <a href="../index.html">
-          <img
-            src="https://pandaads.foodpanda.com/wp-content/uploads/2024/06/foodpanda_panda-ads_logo.svg"
-            alt=""
-            class="logo-image"
-          />
-        </a>
-      </div>
-      <nav class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./newsroom.html">Newsroom</a>
-        <a href="./partners.html">Partners</a>
-        <a href="./ads.html" class="active">panda ads</a>
-        <a href="./contact.html">Contact</a>
-        <a href="./career.html">Careers</a>
-      </nav>
-      <div class="nav-actions">
-        <button class="btn-primary pink-btn">Contact us</button>
-        <i class="fas fa-search search-icon"></i>
-      </div>
+ <header class="navbar">
+        <div class="container nav-flex">
+            <div class="logo">
+                <span class="pink-text-bold">panda</span> <span class="pink-text-light">ads</span>
+            </div>
+            <nav class="nav-links">
+                <div class="nav-item">Home</div>
+                <div class="nav-item">Solutions</div>
+                
+                <div class="nav-item dropdown">
+                    Resources <span class="arrow">▾</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="./insights.html">Insights</a></li>
+                        <li><a href="#">Case studies</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item dropdown">
+                    Tools <span class="arrow">▾</span>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Media Kit generator</a></li>
+                        <li><a href="#">Marketer personality quiz</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-right">
+                <button class="btn-contact">Contact us</button>
+                <span class="search-glass"><i class="fa-solid fa-magnifying-glass"></i></span>
+            </div>
+        </div>
     </header>
 
+    
     <section
       class="ads-hero"
-      style="background-image: url('../assests/ads-panda-images/banner.jpeg')"
+      style="background-image: url('../../assests/ads-panda-images/banner.jpeg')"
     >
       <div class="hero-container">
         <div class="hero-text-content">
@@ -95,7 +106,7 @@
         <div class="benefit-card">
           <div class="benefit-icon">
             <img
-              src="../assests/ads-panda-images/speaker.jpeg"
+              src=".././assests/ads-panda-images/speaker.jpeg"
               alt="Maximise reach"
             />
           </div>
@@ -108,7 +119,7 @@
         <div class="benefit-card">
           <div class="benefit-icon">
             <img
-              src="../assests/ads-panda-images/bag.jpeg"
+              src="../../assests/ads-panda-images/bag.jpeg"
               alt="Engage audiences"
             />
           </div>
@@ -121,7 +132,7 @@
         <div class="benefit-card">
           <div class="benefit-icon">
             <img
-              src="../assests/ads-panda-images/copy.jpeg"
+              src="../../assests/ads-panda-images/copy.jpeg"
               alt="Personalised support"
             />
           </div>
@@ -144,7 +155,7 @@
       <div class="inapp-container">
         <div class="inapp-image">
           <img
-            src="../assests/ads-panda-images/advert.jpeg"
+            src="../../assests/ads-panda-images/advert.jpeg"
             alt="In-app advertising mockups"
           />
         </div>
@@ -171,7 +182,7 @@
         </div>
         <div class="offapp-image">
           <img
-            src="../assests/ads-panda-images/panda-bag.jpeg"
+            src="../../assests/ads-panda-images/panda-bag.jpeg"
             alt="Off-app marketing assets"
           />
         </div>
@@ -182,7 +193,7 @@
       <div class="partnerships-container">
         <div class="partnerships-image">
           <img
-            src="../assests/ads-panda-images/panda=phone.jpeg"
+            src="../../assests/ads-panda-images/panda=phone.jpeg"
             alt="Strategic partnerships data visualization"
           />
         </div>
@@ -208,53 +219,8 @@
           <button class="btn-primary pink-btn">Explore solutions</button>
         </div>
         <div class="targeting-table-wrapper">
-          <!-- <table class="comparison-table">
-                <thead>
-                    <tr>
-                        <th>Targeting based on</th>
-                        <th>Generic platforms</th>
-                        <th>panda ads</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Age, gender, location</td>
-                        <td><span class="check">✔</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                    <tr>
-                        <td>Preferences and inferred data</td>
-                        <td><span class="check">✔</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                    <tr>
-                        <td>Type of device/OS used</td>
-                        <td><span class="check">✔</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                    <tr>
-                        <td>Actual products purchased</td>
-                        <td><span class="cross">✖</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                    <tr>
-                        <td>Spending habits</td>
-                        <td><span class="cross">✖</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                    <tr>
-                        <td>Payment methods used</td>
-                        <td><span class="cross">✖</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                    <tr>
-                        <td>Telco provider</td>
-                        <td><span class="cross">✖</span></td>
-                        <td><span class="check">✔</span></td>
-                    </tr>
-                </tbody>
-            </table> -->
-          <img src="../assests/ads-panda-images/table.jpeg" alt="" />
+        
+          <img src="../../assests/ads-panda-images/table.jpeg" alt="" />
         </div>
       </div>
     </section>
@@ -267,7 +233,7 @@
         <div class="impact-card">
           <div class="impact-img-box">
             <img
-              src="../assests/ads-panda-images/coca.jpeg"
+              src="../../assests/ads-panda-images/coca.jpeg"
               alt="Coca-Cola Case Study"
             />
           </div>
@@ -283,7 +249,7 @@
         <div class="impact-card">
           <div class="impact-img-box">
             <img
-              src="../assests/ads-panda-images/mars.jpeg"
+              src="../../assests/ads-panda-images/mars.jpeg"
               alt="Mars Wrigley Case Study"
             />
           </div>
@@ -299,7 +265,7 @@
         <div class="impact-card">
           <div class="impact-img-box">
             <img
-              src="../assests/ads-panda-images/amazon.jpeg"
+              src="../../assests/ads-panda-images/amazon.jpeg"
               alt="Amazon Prime Case Study"
             />
           </div>
@@ -332,7 +298,7 @@
             <span>Managing Director</span>
           </div>
           <img
-            src="../assests/ads-panda-images/egentic.jpeg"
+            src="../../assests/ads-panda-images/egentic.jpeg"
             alt="eGENTIC logo"
             class="client-logo"
           />
@@ -349,7 +315,7 @@
             <span>Senior Media and Digital Marketing Manager</span>
           </div>
           <img
-            src="../assests/ads-panda-images/robina.jpeg"
+            src="../../assests/ads-panda-images/robina.jpeg"
             alt="Universal Robina logo"
             class="client-logo"
           />
@@ -366,7 +332,7 @@
             <span>Head of Commercial</span>
           </div>
           <img
-            src="../assests/ads-panda-images/money.jpeg"
+            src="../../assests/ads-panda-images/money.jpeg"
             alt="Moneymax logo"
             class="client-logo"
           />
@@ -387,83 +353,83 @@
         <div class="brands-grid">
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/amazon-brand.jpeg"
+            src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/1.png"
             alt="Amazon"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/heineken-brand.jpeg"
+            src="https://pandaads.foodpanda.com/wp-content/uploads/2024/08/2.png"
             alt="Heineken"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/netlflix-brand.jpeg"
+            src="../../assests/ads-panda-images/netlflix-brand.jpeg"
             alt="Netflix"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/samsung-brand.jpeg"
+            src="../../assests/ads-panda-images/samsung-brand.jpeg"
             alt="Samsung"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/citi-brand.jpeg"
+            src="../../assests/ads-panda-images/citi-brand.jpeg"
             alt="Citi"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/huawei-brand.jpeg"
+            src="../../assests/ads-panda-images/huawei-brand.jpeg"
             alt="Huawei"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/master.jpeg"
+            src="../../assests/ads-panda-images/master.jpeg"
             alt="Mastercard"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/unilever.jpeg"
+            src="../../assests/ads-panda-images/unilever.jpeg"
             alt="Unilever"
           />
 
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/cocacola-brand.jpeg"
+            src="../../assests/ads-panda-images/cocacola-brand.jpeg"
             alt="Coca Cola"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/p&g-brand.jpeg"
+            src="../../assests/ads-panda-images/p&g-brand.jpeg"
             alt="P&G"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/chartered.jpeg"
+            src="../../assests/ads-panda-images/chartered.jpeg"
             alt="Standard Chartered"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/visa.jpeg"
+            src="../../assests/ads-panda-images/visa.jpeg"
             alt="Visa"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/mars-brand.jpeg"
+            src="../../assests/ads-panda-images/mars-brand.jpeg"
             alt="Mars"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/gcash-brand.jpeg"
+            src="../../assests/ads-panda-images/gcash-brand.jpeg"
             alt="GCash"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/zalora-brand.jpeg"
+            src="../../assests/ads-panda-images/zalora-brand.jpeg"
             alt="Zalora"
           />
           <img
             class="brand-logo"
-            src="../assests/ads-panda-images/disney.jpeg"
+            src="../../assests/ads-panda-images/disney.jpeg"
             alt="Disney+"
           />
         </div>
@@ -474,7 +440,7 @@
       <div class="footer-container">
         <div class="footer-logo-row">
           <img
-            src="../assests/ads-panda-images/imgi_1_foodpanda_panda-ads_logo.jpeg"
+            src="https://pandaads.foodpanda.com/wp-content/themes/wp-delivery-hero-core-v2/assets/img/foodpanda/logos/logo-white.svg"
             alt="foodpanda logo"
             class="footer-main-logo"
           />
@@ -524,5 +490,6 @@
 
     <script src="ads.js"></script>
     <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js" integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </body>
 </html>

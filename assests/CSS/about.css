@@ -5,319 +5,69 @@
     --text-dark: #333333;
     --bg-light: #f7f7f7;
     --bg-white: #ffffff;
+    --pink: #D70F64;
+    --gray-bg: #F7F7F7;
+    --brand-pink: #d70f64;
+    --text-dark: #333333;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* Hero Section */
-.about-hero {
-    background: linear-gradient(135deg, #ff2b85 0%, #d70f64 100%);
-    color: white;
-    padding: 120px 5%;
-    text-align: center;
+.hero {
+    height: 60vh;
+    background-image: url(https://www.foodpanda.com/wp-content/uploads/2025/07/about-foodpanda.webp); /* Replace with your image link */
+    background-size: cover;
+    background-position: center;
     position: relative;
-    overflow: hidden;
-}
-
-.about-hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    right: -20%;
-    width: 600px;
-    height: 600px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.about-hero::after {
-    content: '';
-    position: absolute;
-    bottom: -30%;
-    left: -10%;
-    width: 400px;
-    height: 400px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.about-hero h1 {
-    font-size: 4rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    animation: fadeInUp 0.8s ease;
-}
-
-.about-hero p {
-    font-size: 1.5rem;
-    font-weight: 400;
-    opacity: 0.95;
-    animation: fadeInUp 1s ease;
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(30px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 5%;
-}
-
-/* Mission Section */
-.mission-section {
-    padding: 100px 0;
-    background-color: var(--bg-white);
-}
-
-.mission-content {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.mission-content h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 30px;
-}
-
-.mission-quote {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--primary-pink);
-    margin-bottom: 30px;
-    font-style: italic;
-    line-height: 1.4;
-}
-
-.mission-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Stats Section */
-.stats-section {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #fff0f7 0%, #ffe4f1 100%);
-}
-
-.stats-section h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 60px;
-}
-
-.stats-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-}
-
-.stat-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    transition: all 0.3s ease;
-    position: relative;
-    overflow: hidden;
-}
-
-.stat-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--primary-pink), #ff2b85);
-}
-
-.stat-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 32px rgba(215, 15, 100, 0.15);
-}
-
-.stat-icon {
-    font-size: 3rem;
-    color: var(--primary-pink);
-    margin-bottom: 20px;
-}
-
-.stat-number {
-    font-size: 4rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    display: inline-block;
-    margin: 0;
-}
-
-.stat-unit {
-    font-size: 2.5rem;
-    font-weight: 800;
-    color: var(--primary-pink);
-    margin-left: 5px;
-}
-
-.stat-card p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-/* Story Section */
-.story-section {
-    padding: 100px 0;
-    background-color: var(--bg-white);
-}
-
-.story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: center;
-}
-
-.story-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
-}
-
-.story-content h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 30px;
-}
-
-.story-content p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-/* Values Section */
-.values-section {
-    padding: 100px 0;
-    background-color: var(--bg-light);
-}
-
-.values-section h2 {
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 800;
-    color: var(--text-dark);
-    margin-bottom: 60px;
-}
-
-.values-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 40px;
-}
-
-.value-card {
-    background: white;
-    padding: 50px 40px;
-    border-radius: 20px;
-    text-align: center;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-    transition: all 0.3s ease;
-}
-
-.value-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 32px rgba(215, 15, 100, 0.12);
-}
-
-.value-icon {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(135deg, #ff2b85 0%, #d70f64 100%);
-    border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 25px;
-    font-size: 2rem;
+    align-items: flex-end; /* Places text at the bottom of the image */
+}
+
+/* The dark gradient at the bottom of the image */
+.hero-overlay {
+    width: 100%;
+    padding-bottom: 40px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 100%);
+}
+
+.hero h1 {
     color: white;
-}
-
-.value-card h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--text-dark);
-    margin-bottom: 15px;
-}
-
-.value-card p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #666;
-}
-
-/* CTA Section */
-.cta-section {
-    padding: 100px 0;
-    background: linear-gradient(135deg, #d70f64 0%, #ff2b85 100%);
-    text-align: center;
-    color: white;
-}
-
-.cta-section h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+    line-height: 0.9;
     font-weight: 800;
+}
+
+/* Content Section */
+.content {
+    padding: 60px 0;
+    color: #333;
+}
+
+.content h2 {
+    font-size: 2.5rem;
     margin-bottom: 20px;
-}
-
-.cta-section p {
-    font-size: 1.3rem;
-    margin-bottom: 40px;
-    opacity: 0.95;
-}
-
-.btn-large {
-    padding: 18px 50px;
-    font-size: 1.1rem;
-    background: white;
-    color: var(--primary-pink);
-    border: none;
-    border-radius: 50px;
     font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-decoration: none;
-    display: inline-block;
+    line-height: 1.2;
 }
 
-.btn-large:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+.content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    color: #555;
 }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero h1 { font-size: 3rem; }
+    .content h2 { font-size: 1.8rem; }
+}
+
 
 /* Back to Top Button */
 .back-to-top {
@@ -343,6 +93,227 @@
 
 .back-to-top:hover {
     transform: scale(1.1);
+}
+
+.partner-section {
+    background-color: var(--gray-bg);
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.slider-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1100px;
+    width: 90%;
+}
+
+.slider-content {
+    flex: 1;
+}
+
+.card {
+    display: none; /* Hidden by default */
+}
+
+.card.active {
+    display: block;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.slider-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.slider-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+/* Image Container */
+.slider-image {
+    flex: 1;
+}
+
+.slider-image img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+/* Navigation Styles */
+.slider-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--pink);
+    cursor: pointer;
+}
+
+.dots {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+.values-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--text-dark);
+    margin-bottom: 40px;
+}
+
+.values-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.pill-group {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.value-pill {
+    padding: 12px 28px;
+    border: 2px solid var(--brand-pink);
+    border-radius: 50px;
+    color: var(--brand-pink);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+/* Hover Effect: Turns black as requested */
+.value-pill:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+/* The specific pill that is black by default in the image */
+.special-black {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+}
+
+.special-black:hover {
+    background-color: var(--brand-pink);
+    border-color: var(--brand-pink);
+}
+
+.drag-slider-section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.slider-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: grab;
+    overflow: hidden;
+    user-select: none;
+}
+
+.slider-container:active {
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.4s ease-out;
+    width: 300%; /* Total width for 3 cards */
+}
+
+.slide-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.card-content {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.card-content h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.card-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
 }
 
 /* Responsive Design */
