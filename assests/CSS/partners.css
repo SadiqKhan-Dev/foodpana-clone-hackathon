@@ -234,6 +234,145 @@
     display: block;
 }
 
+.main-title {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+/* Flex Container */
+.steps-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Individual Cards */
+.step-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 40px 25px;
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Icon Styling */
+.icon-placeholder {
+    /* font-size: 50px; */
+    margin-bottom: 25px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-placeholder img {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* Step Number */
+.step-number {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+/* Step Description */
+.step-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    font-weight: 600;
+    color: #000;
+}
+
+
+/* Section Styling */
+.faq-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+/* FAQ List Styling */
+.faq-list {
+    width: 100%;
+}
+
+.faq-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.15rem;
+    font-weight: 700;
+    border-top: 1.5px solid #000; /* Horizontal line */
+    transition: background-color 0.2s ease;
+}
+
+/* Ensure the last item also has a bottom border */
+.faq-item:last-child {
+    border-bottom: 1.5px solid #000;
+}
+
+/* Arrow Icon Styling */
+.arrow {
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+/* Hover Effect */
+.faq-item:hover {
+    background-color: #f9f9f9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .faq-title {
+        font-size: 1.6rem;
+    }
+    
+    .faq-item {
+        font-size: 1rem;
+        padding: 20px 10px;
+    }
+}
+
+/* Responsive Tablet */
+@media (max-width: 992px) {
+    .step-card {
+        flex: 0 0 calc(50% - 20px);
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+    .step-card {
+        flex: 0 0 100%;
+    }
+}
+
 /* Responsive adjustments for mobile */
 @media (max-width: 768px) {
     .card {
@@ -258,5 +397,127 @@
         font-size: 14px;
         min-width: 120px;
         flex: 1 1 40%; /* Allows buttons to grow and fill rows on mobile */
+    }
+}
+
+
+/* Footer Container */
+.foodpanda-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 60px 80px 40px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+/* Logo Styling */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.footer-logo img {
+    height: 30px;
+}
+
+.brand-name {
+    color: #ff2b85; /* Foodpanda Pink */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Columns Layout */
+.footer-columns {
+    display: flex;
+    justify-content: flex-start;
+    gap: 150px;
+    margin-bottom: 80px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 0px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.footer-col ul li a:hover {
+    color: #ff2b85;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Bottom Bar */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 0; /* Matching image which has no border */
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Scroll Up Button */
+.scroll-up-btn {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    background-color: #ff2b85;
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .foodpanda-footer {
+        padding: 40px 20px;
+    }
+    .footer-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
     }
 }
