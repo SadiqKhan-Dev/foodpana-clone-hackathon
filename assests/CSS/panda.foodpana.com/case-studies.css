@@ -1,0 +1,404 @@
+:root {
+     --brand-pink: #ff2b85;
+  --light-bg: #f8f9fa;
+  --dark-text: #212121;
+  --panda-pink: #ff2b85;
+    --footer-black: #000000;
+    --light-pink: #ffafbd;
+  --panda-pink: #ff2b85;
+    --footer-black: #000000;
+}
+
+
+/* Navbar Dropdowns */
+.navbar {
+    padding: 15px 0;
+    background: white;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.pink-text-bold {
+    color: var(--brand-pink);
+    font-weight: 800;
+}
+
+.pink-text-light {
+    color: var(--brand-pink);
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    font-weight: 700;
+    align-items: center;
+}
+
+.nav-item {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+}
+
+/* Dropdown Logic */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    min-width: 180px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: none;
+    /* Hidden by default */
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: var(--dark-text);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.dropdown-menu li a:hover {
+    background: #fdf2f6;
+    color: var(--brand-pink);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Show on hover */
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-contact {
+    background: var(--brand-pink);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-pink);
+    cursor: pointer;
+}
+
+.logo-image {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+}
+
+.panda-icon {
+    font-size: 1.8rem;
+    margin-right: 5px;
+}
+
+.case-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Header Styling */
+.section-header {
+    margin-bottom: 60px;
+}
+
+.section-header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -1.5px;
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Featured Card Layout */
+.featured-card {
+    display: flex;
+    align-items: center;
+    gap: 50px; /* Space between image and text */
+}
+
+.card-visual {
+    flex: 1.2; /* Image takes slightly more space */
+}
+
+.card-visual img {
+    width: 100%;
+    border-radius: 12px;
+    display: block;
+}
+
+.card-text {
+    flex: 1;
+}
+
+/* Typography & Elements */
+.category-tag {
+    display: block;
+    color: #ff2b85;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+.card-text h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.card-text p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+/* Button Style */
+.btn-read-more {
+    display: inline-block;
+    background-color: #ff2b85;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 12px 35px;
+    border-radius: 50px;
+    transition: background 0.3s;
+}
+
+.btn-read-more:hover {
+    background-color: #e02675;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 900px) {
+    .featured-card {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .section-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+
+.more-case-studies {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.case-study-row {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 100px; /* Large spacing between rows */
+}
+
+/* This flips the layout for the first row */
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.cs-image, .cs-content {
+    flex: 1;
+}
+
+.cs-image img {
+    width: 100%;
+    display: block;
+    /* Optional: the original images have no border-radius in this section */
+}
+
+/* Content Styling */
+.tag {
+    display: block;
+    color: var(--panda-pink);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--panda-pink);
+    color: white;
+    padding: 12px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: opacity 0.2s ease;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* Responsive: Stack columns on mobile */
+@media (max-width: 768px) {
+    .case-study-row, .row-reverse {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+}
+
+/* CTA Bar Styles */
+.cta-bar {
+    background-color: var(--panda-pink);
+    padding: 40px 80px;
+    color: white;
+    margin-top: 80px;
+}
+
+.cta-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cta-bar h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+}
+
+.btn-white {
+    background: white;
+    color: var(--panda-pink);
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: var(--footer-black);
+    color: white;
+    padding: 60px 0 40px;
+    position: relative;
+}
+
+.footer-logo {
+    margin-bottom: 40px;
+}
+
+.social-icon  {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-logo img {
+    height: 35px; /* Adjust based on your logo asset */
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.footer-col h3 {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}

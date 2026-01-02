@@ -211,6 +211,7 @@ a {
     background-color: var(--panda-pink);
     padding: 40px 0;
     color: white;
+    margin-top: 80px;
 }
 
 .cta-flex {
