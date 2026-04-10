@@ -404,7 +404,7 @@ This project is created for educational purposes as part of a web development as
 
 For questions or feedback about this project:
 - GitHub: [https://github.com/SadiqKhan-Dev/foodpana-clone-hackathon/]
-- Email: [saiqkhan7777@gmail.com]
+- Email: saiqkhan7777@gmail.com
 
 ---
 
