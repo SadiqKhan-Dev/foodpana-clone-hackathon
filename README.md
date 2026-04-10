@@ -392,7 +392,7 @@ This project demonstrates proficiency in:
 ## Credits
 
 - **Original Design**: Food Panda (https://www.foodpanda.com)
-- **Developer**: [Your Name]
+- **Developer**: [Sadiq Khan](https://github.com/SadiqKhan-Dev)
 - **Assignment**: Web Development Course
 - **Year**: 2025
 
@@ -403,7 +403,7 @@ This project is created for educational purposes as part of a web development as
 ## Contact
 
 For questions or feedback about this project:
-- GitHub: [https://github.com/SadiqKhan-Dev/foodpana-clone-hackathon/]
+- GitHub: https://github.com/SadiqKhan-Dev/foodpana-clone-hackathon/
 - Email: saiqkhan7777@gmail.com
 
 ---
